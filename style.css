@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f9fc;
+  color: #333;
+}
+
+nav {
+  background: #fff;
+  padding: 16px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.nav-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #667BE6; /* Warna ungu-biru */
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #667BE6;
+}
+
+/* Hero Section (Beranda) */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 50px;
+    background: linear-gradient(to right, #667BE6, #E084BB); /* Gradasi warna beranda */
+    color: #fff;
+    text-align: left;
+    min-height: 500px;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 700px;
+    margin-right: 50px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-content #description {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.hero-buttons button {
+    background-color: #fff;
+    color: #667BE6;
+    border: none;
+    padding: 12px 25px;
+    margin-right: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-buttons button:hover {
+    background-color: #eee;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    max-width: 200%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* About, Services, Contact Sections */
+section {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #667BE6; /* Warna ungu-biru */
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+.about-cards, .services-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Card pada bagian "Tentang" */
+.about-cards .card:nth-child(1) {
+    background-color: #FFEDFB; /* Warna untuk Kesehatan Mental */
+}
+.about-cards .card:nth-child(2) {
+    background-color: #E9F1FF; /* Warna untuk Kesehatan Reproduksi */
+}
+.about-cards .card:nth-child(3) {
+    background-color: #FFECD9; /* Warna untuk Pemberdayaan */
+}
+
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #667BE6; /* Warna ungu-biru */
+}
+
+.card ul {
+  text-align: left;
+  padding-left: 0;
+  list-style: none;
+}
+
+.card ul li::before {
+  content: '• ';
+  color: #FC5C7D;
+}
+
+/* Card pada bagian "Layanan" */
+.services-cards .card {
+    background-color: #fff; /* Tetap putih */
+    border: 1px solid #E084BB; /* Stroke warna E084BB */
+}
+
+.contact-section,
+.form-section {
+  background-color: #fff;
+  padding: 80px 30px;
+  text-align: center;
+}
+
+.form-section h2 {
+  color: #667BE6;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+#myForm {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+#myForm input[type="text"],
+#myForm input[type="email"],
+#myForm input[type="number"] {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+#myForm label {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+
+#myForm input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-right: 10px;
+}
+
+#check {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+#submit-form {
+  background-color: #667BE6;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+#submit-form:hover {
+  background-color: #5165d3;
+}
+
+#warning {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+.warning-message {
+    color: red;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#submit-form {
+    background-color: #667BE6; /* Warna ungu-biru */
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+#submit-form:hover {
+    background-color: #5165d3; /* Warna sedikit lebih gelap */
+}
+
+footer {
+    background: linear-gradient(to right, #667BE6, #E084BB); /* Gradasi warna footer sama dengan beranda */
+    color: #fff;
+    text-align: center;
+    padding: 30px 50px;
+    font-size: 16px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Jarak antara logo dan teks */
+}
+
+.nav-logo img {
+  width: 32px;
+  height: 32px;
+}
